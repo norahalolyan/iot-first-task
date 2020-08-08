@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+	<html lang="en" dir="ltr"
+	<head>
+		<meta charset="utf-8">
+		<title>Control Panel</title>
+		<style>
+			body{
+			background-color: gray;
+			}
+		</style>
+
+		<style>
+			h1{
+				text-align: center;
+				color: pink;
+				font-family: "times new roman";
+			}
+			p{
+				text-align: center;
+				color: white;
+				font-family: "times new roman";
+				font-weight:bold;
+			}
+		</style>
+
+
+		<style>
+			body{
+				margin: 0;
+				padding: 0;
+			
+			}	
+			.container{
+				text-align: center;
+				margin-top: 360px;
+			}
+			.btn{
+				border: 1px solid #008CBA;
+				background:black;
+				padding: 10px 20px;
+				font-size: 20px;
+				font-family: "times new roman";
+				cursor: pointer;
+				margin: 10px;
+				transition: 0.8s;
+				position: relative;
+				overflow: hidden;
+			}
+			.btn1,.btn2{
+				color:cadetblue;
+				font-weight: bold;
+			}
+			
+			.btn3{
+				color:white;
+				font-weight: bold;
+			}
+			.btn4,.btn5{
+				color: cadetblue;
+				font-weight: bold;
+			}
+			.btn1:hover,.btn2:hover{
+				color:cadetblue;
+			}
+		
+			.btn4:hover,.btn5:hover{
+				color:cadetblue;
+			}
+			.btn::before{
+				content:"";
+				position: absolute;
+				left:0;
+				width:100%;
+				height:0%;
+				background: black;
+				z-index: -1;
+				transition: 0.8s;
+			}
+			.btn1::before,.btn4::before{
+				top:0;
+				border-radius: 0 0 50% 50%;
+			}
+			.btn2::before,.btn5::before{
+				bottom:0;
+				border-radius: 50% 50% 0 0;
+			}
+			.btn4::before,.btn5::before{
+				height: 100%;
+			}
+			.btn1:hover::before,.btn2:hover::before{
+				height: 0%;
+			}
+			.btn4:hover::before,.btn5:hover::before{
+				height: 0%;
+			
+			}
+			.btn2::before,.btn5::before{
+				top:0;
+				border-radius: 0 0 50% 50%;
+			}
+			.btn1::before,.btn4::before{
+				bottom:0;
+				border-radius: 50% 50% 0 0;
+			}
+			.btn1::before,.btn2::before{
+			height: 100%;
+			}
+			.btn4:hover::before,.btn5:hover::before{
+				height: 0%;
+			}
+			.btn1:hover::before,.btn2:hover::before{
+				height: 0%;
+			}
+		</style>
+		<style>
+			.btn1{
+			postion: absolute;
+			left:130px;
+			
+		}
+			.btn2{
+			postion: absolute;
+			left:245px;
+			
+		}
+		
+			.btn4{
+			postion: absolute;
+			left:-105px;
+			top:-80px;
+		}
+			.btn5{
+			postion: absolute;
+			left:-220px;
+			top:80px;
+		}
+		</style>
+		
+	</head>
+	<body> 
+	
+		<h1> NH Control Panel</h1>
+		<p>control panel for Robot</p>
+	
+	<div class="container">
+		<button class="btn btn1">LEFT</button>
+		<button class="btn btn2">RIGHT</button>
+		<button class="btn btn3">STOP</button>
+		<button class="btn btn4">UP</button>
+		<button class="btn btn5">DOWN</button>
+	</div>
+	</body>
+	</html>
